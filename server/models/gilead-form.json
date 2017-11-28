@@ -1,0 +1,141 @@
+{
+  "name": "GileadForm",
+  "plural": "GileadForms",
+  "base": "Form",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date_submitted": {
+      "type": "date"
+    },
+    "services": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_name_mg": {
+      "type": "number"
+    },
+    "contact_authorization": {
+      "type": "boolean"
+    },
+    "patient_insured": {
+      "type": "boolean"
+    },
+    "primary_insurance": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "subscriber_name": {
+      "type": "string"
+    },
+    "policy_holder_name": {
+      "type": "string"
+    },
+    "policy_holder_relationship": {
+      "type": "string"
+    },
+    "payer_phone_number": {
+      "type": "string"
+    },
+    "medicare_part_d_plan": {
+      "type": "boolean"
+    },
+    "policy_number": {
+      "type": "number"
+    },
+    "group_number": {
+      "type": "number"
+    },
+    "rx_bin_number": {
+      "type": "number"
+    },
+    "rx_pcn_number": {
+      "type": "number"
+    },
+    "secondary_insurance_information_available": {
+      "type": "boolean"
+    },
+    "prescriber_name": {
+      "type": "string"
+    },
+    "prescriber_facility_name": {
+      "type": "string"
+    },
+    "prescriber_address": {
+      "type": "string"
+    },
+    "prescriber_city": {
+      "type": "string"
+    },
+    "prescriber_state": {
+      "type": "string"
+    },
+    "prescriber_zipcode": {
+      "type": "string"
+    },
+    "prescriber_office_contact": {
+      "type": "string"
+    },
+    "prescriber_phone_number": {
+      "type": "string"
+    },
+    "prescriber_fax_number": {
+      "type": "string"
+    },
+    "prescriber_npi": {
+      "type": "string"
+    },
+    "prescriber_tax_id": {
+      "type": "string"
+    },
+    "prescriber_state_license": {
+      "type": "string"
+    },
+    "diagnosis": {
+      "type": "string"
+    },
+    "receive_marketing_information": {
+      "type": "boolean"
+    },
+    "annual_household_income": {
+      "type": "number"
+    },
+    "number_people_household": {
+      "type": "number"
+    },
+    "truvada_prep_medication_assistance_program": {
+      "type": "string"
+    },
+    "ssn": {
+      "type": "number"
+    },
+    "applied_for_adap": {
+      "type": "boolean"
+    },
+    "applied_for_medicaid": {
+      "type": "boolean"
+    },
+    "eligible_for_medicaid": {
+      "type": "boolean"
+    },
+    "eligible_for_va_benefits": {
+      "type": "boolean"
+    },
+    "eligible_for_marketplace_insurance": {
+      "type": "boolean"
+    },
+    "applied_for_marketplace_insurance": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
