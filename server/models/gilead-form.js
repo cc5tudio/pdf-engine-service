@@ -5,28 +5,31 @@ module.exports = function(Gileadform) {
     // Get the form from the database
 
     // Use the pdf module to create a Gilead pdf based on the fields
-    var pdfFormFill = require('./lib/pdf-fill-form.js');
+    var pdfFormFill = require('pdf-fill-form');
     var fs = require('fs');
 
-// Show fields
-    var formFields = pdfFormFill.readSync('/Users/charles/gilead.pdf');
+    // Show fields
+    var formFields = pdfFormFill.readSync('template/gilead.pdf');
     console.log(formFields);
 
-// Write fields
-    pdfFormFill.writeAsync('/Users/charles/gilead.pdf', { 'Benefits Investigation': true, 'Product Name': 'PreP' }, { 'save': 'imgpdf' }, function(err, result) {
+    // Write fields
+    pdfFormFill.writeAsync('template/gilead.pdf',
+      {'Benefits Investigation': true, 'Product Name': 'PreP'},
+      {'save': 'imgpdf'}, function(err, result) {
       if (err) {
         return console.log(err);
       }
 
-      fs.writeFile('test_filled_images.pdf', result, function(err) {
+      fs.writeFile('./out/test_filled_images.pdf', result, function(err) {
         if (err) {
           return console.log(err);
         }
         console.log('The file was saved!');
+        cb(null, 'The file was saved! ' + id);
       });
     });
 
-    cb(null, 'Greetings... ' + id);
+
   }
 
   Gileadform.remoteMethod('printToPdf', {
