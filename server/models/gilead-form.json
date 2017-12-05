@@ -4,23 +4,42 @@
   "base": "Form",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "mysql": {
+      "table": "gilead_form"
+    }
   },
   "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
     "date_submitted": {
-      "type": "date"
+      "type": "date",
+      "mysql": {
+        "columnName": "activity_date_time"
+      }
     },
     "services": {
       "type": "string"
     },
     "product_name": {
-      "type": "string"
+      "type": "string",
+      "mysql": {
+        "columnName": "product_name"
+      }
     },
     "product_name_mg": {
-      "type": "number"
+      "type": "number",
+      "mysql": {
+        "columnName": "mg"
+      }
     },
     "contact_authorization": {
-      "type": "boolean"
+      "type": "boolean",
+      "mysql": {
+        "columnName": "authorize_advancing_access"
+      }
     },
     "patient_insured": {
       "type": "boolean"
@@ -100,13 +119,13 @@
     "diagnosis": {
       "type": "string"
     },
-    "receive_marketing_information": {
+    "authorize_advancing_access": {
       "type": "boolean"
     },
     "annual_household_income": {
       "type": "number"
     },
-    "number_people_household": {
+    "number_people_in_household": {
       "type": "number"
     },
     "truvada_prep_medication_assistance_program": {

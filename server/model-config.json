@@ -40,7 +40,7 @@
     "public": true
   },
   "GileadForm": {
-    "dataSource": "db",
+    "dataSource": "civicrm",
     "public": true
   }
 }
