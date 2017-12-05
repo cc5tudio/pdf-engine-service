@@ -20,7 +20,25 @@
         "columnName": "activity_date_time"
       }
     },
-    "services": {
+    "display_name": {
+      "type": "string"
+    },
+    "preferred_language": {
+      "type": "string"
+    },
+    "patient_address": {
+      "type": "string"
+    },
+    "patient_city": {
+      "type": "string"
+    },
+    "patient_state": {
+      "type": "string"
+    },
+    "patient_zipcode": {
+    "type": "string"
+  },
+    "patient_phone": {
       "type": "string"
     },
     "product_name": {
@@ -128,7 +146,7 @@
     "number_people_in_household": {
       "type": "number"
     },
-    "truvada_prep_medication_assistance_program": {
+    "program_purpose": {
       "type": "string"
     },
     "ssn": {
