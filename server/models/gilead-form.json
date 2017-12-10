@@ -41,6 +41,10 @@
     "patient_phone": {
       "type": "string"
     },
+
+    "birth_date": {
+      "type": "string"
+    },
     "product_name": {
       "type": "string",
       "mysql": {
