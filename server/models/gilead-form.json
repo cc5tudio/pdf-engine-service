@@ -20,6 +20,9 @@
         "columnName": "activity_date_time"
       }
     },
+    "services":{
+      "type":"string"
+    },
     "display_name": {
       "type": "string"
     },

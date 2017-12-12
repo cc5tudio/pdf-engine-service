@@ -570,7 +570,7 @@ module.exports = function(Gileadform) {
                 }
               });
             });
-        }
+        },
     ], function(error, results){
       if(error)
         cb(error);
