@@ -2,7 +2,10 @@ FROM node:7
 
 # Create app directory
 RUN mkdir -p /usr/src/pdf-engine-service
-WORKDIR /usr/src/rules-engine-service
+WORKDIR /usr/src/pdf-engine-service
+
+# Install Qt5
+RUN apt-get update && apt-get -y install libcairo2-dev libpoppler-qt5-dev
 
 # Install app dependencies
 COPY package.json /usr/src/pdf-engine-service
