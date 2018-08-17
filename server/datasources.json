@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },  
+  "civicrm": {
+    "host": "54.152.105.166",
+    "port": 3306,
+    "database": "bitnami_joomla",
+    "password": "23wesdxc@#WESDXC",
+    "name": "civicrm",
+    "user": "bn_joomla",
+    "connector": "mysql"
+  }
+}
