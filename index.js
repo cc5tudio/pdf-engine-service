@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
+var cors = require('cors');
 var pdfFillForm = require('pdf-fill-form');
 var AWS = require('aws-sdk');
 var fs = require('fs');
@@ -9,6 +10,7 @@ AWS.config.loadFromPath('./credentials.json');
 
 var s3 = new AWS.S3();
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
