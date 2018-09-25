@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hide data source config file
 pdf-engine-service/server/datasources.json
 
@@ -75,3 +76,8 @@ typings/
 .strong-pm
 node_modules
 npm-debug.log
+=======
+node_modules
+credentials.json
+.vscode
+>>>>>>> b608c19fae9bf3686aaa0112f01a16332d90c373

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "pdf-engine-service",
   "author": "Charles Campbell <charles@cc5tudio.com>",
   "version": "1.0.0",
@@ -34,4 +35,25 @@
   },
   "license": "UNLICENSED",
   "description": "pdf-engine-service"
+=======
+  "name": "pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.297.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pdf-fill-form": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC"
+>>>>>>> b608c19fae9bf3686aaa0112f01a16332d90c373
 }
